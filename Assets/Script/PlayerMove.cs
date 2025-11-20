@@ -8,7 +8,6 @@ public class PlayerMove : MonoBehaviour
 
     void Update()
     {
-        FlowFieldManager.Instance.BuildIntegrationField(transform.position);
-        FlowFieldManager.Instance.BuildFlowField();
+        BFSManager.Instance.BuildDistanceField(transform.position);
     }
 }
